@@ -13,6 +13,11 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo" href="#">
+      <picture>
+        <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
+        <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
+        <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+      </picture>
     </a>
     <a class="main-header__title" href="#">
       <img src="logo-title.jpg" width="33" height="38" alt="Cat Energy">
@@ -92,6 +97,18 @@
             <div class="results__wrapper">
               <div class="results__total">60 дней</div>
               <div class="results__description">затрачено времени</div>
+            </div>
+            <div class="results__image">
+              <picture>
+                <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/cat-before@1x.png 1x, images/cat-before@2x.png 2x">
+                <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-before@1x.png 1x, images/cat-before@2x.png 2x">
+                <img src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Кот до прохождения программы">
+              </picture>
+              <picture>
+                <source media="(min-width: 1440px)" width="560" height="512" type="image/png" srcset="images/cat-after@1x.png 1x, images/cat-after@2x.png 2x">
+                <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-after@1x.png 1x, images/cat-after@2x.png 2x">
+                <img src="images/cat-after-mobile@1x.png" width="280" height="256" srcset="images/cat-after-mobile@2x.png 2x" alt="Кот до прохождения программы">
+              </picture>
             </div>
             <p class="example__cost">Затраты на питание:<span class="example__cost-total">15000</span>руб.</p>
           </div>
