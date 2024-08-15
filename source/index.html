@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/152.png">
   <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer>
   </script>
@@ -47,7 +48,11 @@
       <div class="hero__wrapper">
         <h1 class="hero__title">Функциональное питание для котов</h1>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
-        <img src="hero-logo.png" alt="Питание для котов со вкусом курицы" width="280" height="270">
+        <picture>
+          <source media="(min-width: 1440px)" width="709" height="609" type="image/svg+xml" srcset="images/hero-image-desktop@1x.png 1x, images/hero-image-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" width="709" height="609" type="image/svg+xml" srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x">
+          <img src="images/hero-image-mobile@1x.png" width="280" height="270" alt="Логотип Cat Energy">
+        </picture>
         <button class="button hero__button" type="button">Подбор программы</button>
       </div>
     </section>
