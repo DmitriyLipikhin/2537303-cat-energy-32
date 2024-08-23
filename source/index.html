@@ -31,13 +31,13 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--current">
-            <a href="#">Главная</a>
+            <a class="main-nav-link" href="#">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="main-nav-link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Подбор программы</a>
+            <a class="main-nav-link" href="#">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -85,7 +85,7 @@
           <li class="advantages-item advantages-item--water">Выпускается в виде порошка,
             который нужно лишь залить
             кипятком и готово.</li>
-          <li class="advantages-item advantages-item-food">Замените один-два приема
+          <li class="advantages-item advantages-item--food">Замените один-два приема
             обычной еды на наше
             функциональное питание.</li>
           <li class="advantages-item advantages-item--watch">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
@@ -105,6 +105,7 @@
             <div class="results__wrapper">
               <div class="results__total">60 дней</div>
               <div class="results__description">затрачено времени</div>
+              <p class="results__cost">Затраты на питание:<span class="results__cost-total">15000</span>руб.</p>
             </div>
             <div class="results__image">
               <picture>
@@ -118,7 +119,6 @@
                 <img src="images/cat-after-mobile@1x.png" width="280" height="256" srcset="images/cat-after-mobile@2x.png 2x" alt="Кот до прохождения программы">
               </picture>
             </div>
-            <p class="example__cost">Затраты на питание:<span class="example__cost-total">15000</span>руб.</p>
           </div>
         </div>
       </div>
@@ -128,7 +128,7 @@
       <div class="contacts__container">
         <div class="contacts__wrapper">
           <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
-          <p class="contacts__addres">
+          <p class="contacts__address">
             ул. Большая
             Конюшенная, д. 19/8
             Санкт-Петербург
@@ -148,12 +148,15 @@
       <div class="main-footer-social social">
         <ul class="social-item">
           <li class="social-list">ВК</li>
-          <li class="social-list">ТГ</li>
-          <li class="social-list">ТВиттер</li>
+          <li class="social-list">YouTube</li>
+          <li class="social-list">Телеграм</li>
         </ul>
       </div>
-      <div class="main-footer__logo-academy">
-
+      <div class="main-footer__logo-academy academy-link">
+        <span class="academy-link__text">HTML Academy</span>
+        <svg class="academy-link__logo" width="27" height="34">
+          <use href="icons/stack.svg#html-academy-logo"></use>
+        </svg>
       </div>
     </div>
   </footer>
