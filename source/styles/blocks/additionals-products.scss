@@ -5,9 +5,16 @@
   color: $secondary-color;
 }
 
-.aditionals-products__text {
+.additionals-products__text {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .additionals-products__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }

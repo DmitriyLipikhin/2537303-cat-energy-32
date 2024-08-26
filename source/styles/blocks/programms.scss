@@ -12,3 +12,19 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .programms__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .programms__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .programms__link {
+    font-size: 20px;
+  }
+}

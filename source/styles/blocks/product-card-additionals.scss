@@ -1,4 +1,4 @@
-.product-card-additionals__item-title {
+.product-card-additionals__title {
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
@@ -10,4 +10,16 @@
   font-size: 14px;
   line-height: 14px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .product-card-additionals__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .product-card-additionals__info-wrapper {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

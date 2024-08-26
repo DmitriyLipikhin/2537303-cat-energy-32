@@ -15,8 +15,19 @@
   text-transform: uppercase;
 }
 
-.hero__button {
-  font-size: 20px;
-  line-height: 26px;
-  text-transform: uppercase;
+@media (min-width: $tablet-width) {
+  .hero__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .hero-slogan {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .hero__button {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }

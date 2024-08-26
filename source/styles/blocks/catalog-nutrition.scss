@@ -4,3 +4,10 @@
   line-height: 36px;
   color: $secondary-color;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog-nutrition__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

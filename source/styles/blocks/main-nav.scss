@@ -9,3 +9,16 @@
   color: $secondary-color;
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav-link {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav-link {
+    color: #ffffff;
+  }
+}
