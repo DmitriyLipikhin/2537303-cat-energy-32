@@ -2,3 +2,15 @@
   font-size: 16px;
   line-height: 20px;
 }
+
+.academy-link:hover .academy-link__logo {
+  fill: $basic-green;
+}
+
+.academy-link__logo {
+  fill: #666666;
+}
+
+.academy-link:active {
+  opacity: 0.3;
+}

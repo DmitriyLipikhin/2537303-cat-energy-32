@@ -13,6 +13,20 @@
   text-align: center;
 }
 
+.additionals-products__gift {
+  position: relative;
+}
+
+.additionals-products__gift-text::before {
+  background-image: url("../../icons/icon_gift.svg");
+  background-size: 80px 83px;
+  width: 80px;
+  height: 83px;
+  position: absolute;
+  content: "";
+  background-color: rgb(131, 131, 131);
+}
+
 @media (min-width: $tablet-width) {
   .additionals-products__title {
     font-size: 32px;

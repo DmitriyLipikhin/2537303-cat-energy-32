@@ -5,6 +5,48 @@
   color: $secondary-color;
 }
 
+.advantages__item {
+  position: relative;
+}
+
+.advantages__item::before {
+  background-color: $basic-green;
+  width: 60px;
+  height: 60px;
+  content: "";
+  position: absolute;
+}
+
+.advantages__item::after {
+  content: "";
+  width: 26px;
+  height: 32px;
+  position: absolute;
+  left: 10px;
+}
+
+.advantages__item--leaf::after {
+  background-image: url("../../icons/icon-leaf.svg");
+  background-size: 25px 28px;
+}
+
+.advantages__item--water::after {
+  background-image: url("../../icons/icon-water.svg");
+  background-size: 26px 27px;
+}
+
+.advantages__item--food::after {
+  background-image: url("../../icons/icon-food.svg");
+  background-size: 25px 30px;
+}
+
+.advantages__item--watch::after {
+  background-image: url("../../icons/icon-watch.svg");
+  background-size: 26px 31px;
+  width: 26px;
+  height: 32px;
+}
+
 @media (min-width: $tablet-width) {
   .advantages__title {
     font-size: 60px;
@@ -14,6 +56,11 @@
   .advantages__item {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .advantages__item::before {
+    width: 80px;
+    height: 80px;
   }
 }
 

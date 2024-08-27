@@ -1,8 +1,46 @@
+.programms__item {
+  position: relative;
+}
+
 .programms__title {
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   color: $secondary-color;
+}
+
+.programms__item::after {
+  position: absolute;
+  content: "";
+}
+
+.programms__item::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: 20px;
+  left: 26px;
+  position: absolute;
+  background-color: $basic-green;
+  border-radius: 50%;
+}
+
+.programms__item:nth-child(1)::after {
+  width: 36px;
+  height: 50px;
+  background-image: url("../../icons/cat-weight-loss.svg");
+  background-size: 36px 50px;
+  top: 20px;
+  left: 26px;
+}
+
+.programms__item:nth-child(2)::after {
+  width: 67px;
+  height: 28px;
+  background-image: url("../../icons/cat-weight-gain.svg");
+  background-size: 67px 28px;
+  top: 20px;
+  left: 26px;
 }
 
 .programms__link {
@@ -27,5 +65,42 @@
   .programms__link {
     font-size: 20px;
   }
+
+  .programms__item::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+  }
+
+  .programms__item:nth-child(1)::after {
+    width: 140px;
+    height: 194px;
+    background-size: 140px 194px;
+  }
+
+  .programms__item:nth-child(2)::after {
+    width: 268px;
+    height: 112px;
+    background-size: 268px 112px;
+  }
 }
 
+@media (min-width: $desktop-width) {
+  .programms__item::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+  }
+
+  .programms__item:nth-child(1)::after {
+    width: 70px;
+    height: 97px;
+    background-size: 70px 97px;
+  }
+
+  .programms__item:nth-child(2)::after {
+    width: 134px;
+    height: 56px;
+    background-size: 134px 56px;
+  }
+}

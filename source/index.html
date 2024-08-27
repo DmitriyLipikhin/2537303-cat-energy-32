@@ -22,9 +22,9 @@
         <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
         <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
       </picture>
-    </a>
-    <a class="main-header__title" href="#">
-      <img src="logo-title.jpg" width="33" height="38" alt="Cat Energy">
+      <svg width="128" height="24">
+        <use href="icons/stack.svg#icon-logo-text"></use>
+      </svg>
     </a>
     <nav class="main-nav">
       <button class="main-nav__togle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -65,8 +65,6 @@
             <p class="programms__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="programms__link" href="#">Каталог slim</a>
           </li>
-        </ul>
-        <ul class="programms__list">
           <li class="programms__item">
             <h3 class="programms__title">Набор массы</h3>
             <p class="programms__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
@@ -143,20 +141,30 @@
   <footer class="main-footer">
     <div class="main-footer__container">
       <div class="main-footer__name-company">
-
+        <svg width="128" height="24">
+          <use href="icons/stack.svg#icon-logo-text"></use>
+        </svg>
       </div>
-      <div class="main-footer-social social">
-        <ul class="social-item">
-          <li class="social-list">ВК</li>
-          <li class="social-list">YouTube</li>
-          <li class="social-list">Телеграм</li>
+      <div class="main-footer__social social">
+        <ul class="social__item">
+          <li class="social__list social__list--vk">
+            <a class="visually-hidden" href="#">ВК</a>
+          </li>
+          <li class="social__list social__list--youtube">
+            <a class="visually-hidden" href="#">YouTube</a>
+          </li>
+          <li class="social__list social__list--telegram">
+            <a class="visually-hidden" href="#">Телеграм</a>
+          </li>
         </ul>
       </div>
-      <div class="main-footer__logo-academy academy-link">
-        <span class="academy-link__text">HTML Academy</span>
-        <svg class="academy-link__logo" width="27" height="34">
-          <use href="icons/stack.svg#html-academy-logo"></use>
-        </svg>
+      <div class="main-footer__logo-academy-container ">
+        <a class="main-footer__logo-academy-link academy-link" href="#">
+          <span class="academy-link__text">HTML Academy</span>
+          <svg class="academy-link__logo" width="27" height="34">
+            <use href="icons/stack.svg#icon-logo-html"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </footer>

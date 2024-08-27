@@ -1,0 +1,29 @@
+.social__item {
+  position: relative;
+}
+
+.socia__list {
+  position: absolute;
+  content: "";
+}
+
+.social__list--vk {
+  background-image: url("../../icons/icon-vk.svg");
+  background-size: 29px 17px;
+  width: 29px;
+  height: 17px;
+}
+
+.social__list--youtube {
+  background-image: url("../../icons/icon-youtube.svg");
+  background-size: 24px 19px;
+  width: 24px;
+  height: 19px;
+}
+
+.social__list--telegram {
+  background-image: url("../../icons/icon-telegram.svg");
+  background-size: 20px 17px;
+  width: 20px;
+  height: 17px;
+}
