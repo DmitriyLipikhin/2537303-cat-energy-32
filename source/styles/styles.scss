@@ -8,6 +8,8 @@
 /* index */
 @import "./blocks/visually-hidden.scss";
 @import "./blocks/button.scss";
+@import "./blocks/container.scss";
+@import "./blocks/page.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/main-container.scss";
@@ -18,8 +20,9 @@
 @import "./blocks/example.scss";
 @import "./blocks/results.scss";
 @import "./blocks/contacts.scss";
+@import "./blocks/main-footer.scss";
 @import "./blocks/social.scss";
-@import "./blocks/academy-link.scss";
+@import "./blocks/html-academy.scss";
 
 /* catalog */
 @import "./blocks/catalog-nutrition.scss";
@@ -27,5 +30,6 @@
 @import "./blocks/more-products";
 @import "./blocks/additionals-products.scss";
 @import "./blocks/product-card-additionals.scss";
+@import "./blocks/gift.scss";
 @import "./blocks/subscribe.scss";
 

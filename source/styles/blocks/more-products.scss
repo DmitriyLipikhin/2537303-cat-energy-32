@@ -1,15 +1,50 @@
+.more-products {
+  padding: 25px 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
 .more-products__title {
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  margin-top: 53px;
+  margin-bottom: 8px;
+
+  &::before,
+  &::after {
+    width: 25px;
+    height: 2px;
+    top: 37px;
+    left: 148px;
+    content: "";
+    position: absolute;
+    background-color: #d3d3d3;
+  }
+
+  &::before {
+    transform: rotate(90deg);
+    box-shadow: n;
+  }
 }
 
 .more-products__text {
   font-size: 12px;
-  line-height: 16;
+  line-height: 16px;
   text-align: center;
+  margin: 0;
+  margin-bottom: 21px;
+}
+
+.button--show-more {
+  background-color: #f2f2f2;
+  color: $primary-color;
 }
 
 @media (min-width: $tablet-width) {

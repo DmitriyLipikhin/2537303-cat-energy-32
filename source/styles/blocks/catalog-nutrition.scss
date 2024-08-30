@@ -1,8 +1,26 @@
+.catalog-nutritiom__header-container {
+  width: 280px;
+  padding-top: 27px;
+  min-height: 104px;
+}
+
+.catalog-nutrition__container {
+  width: 320px;
+}
+
 .catalog-nutrition__title {
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 36px;
   color: $secondary-color;
+  margin: 0;
+  font-weight: 400;
+}
+
+.catalog-nutrition__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 @media (min-width: $tablet-width) {

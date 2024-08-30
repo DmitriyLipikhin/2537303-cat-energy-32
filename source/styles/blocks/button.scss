@@ -1,3 +1,28 @@
 .button--show-more {
   background-color: #f2f2f2;
 }
+
+.button {
+  font-family: $secondary-font;
+  background-color: $basic-green;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  min-height: 40px;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  color: rgb(255, 255, 255, 0.3);
+}
+

@@ -1,0 +1,29 @@
+.html-academy {
+  width: 280px;
+  margin-top: 21px;
+}
+
+.html-academy__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+.html-academy__link svg {
+  fill: #666666;
+}
+
+.html-academy__text {
+  color: $primary-color;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.html-academy__link:hover use.logo {
+  fill: $basic-green;
+}
+
+.html-academy__link:active {
+  opacity: 0.3;
+}

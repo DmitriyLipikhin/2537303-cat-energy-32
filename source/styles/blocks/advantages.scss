@@ -1,12 +1,29 @@
+.advantages__container {
+  width: 280px;
+}
 
 .advantages__title {
   font-size: 36px;
   line-height: 40px;
   color: $secondary-color;
+  font-family: $secondary-font;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.advantages__list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  row-gap: 26px;
+  margin-bottom: 52px;
 }
 
 .advantages__item {
   position: relative;
+  margin-left: 80px;
 }
 
 .advantages__item::before {
@@ -15,6 +32,7 @@
   height: 60px;
   content: "";
   position: absolute;
+  left: -80px;
 }
 
 .advantages__item::after {
@@ -22,29 +40,30 @@
   width: 26px;
   height: 32px;
   position: absolute;
-  left: 10px;
+  left: -62px;
+  top: 15px;
+  background-repeat: no-repeat;
 }
 
 .advantages__item--leaf::after {
   background-image: url("../../icons/icon-leaf.svg");
-  background-size: 25px 28px;
+  background-size: 29px 31px;
+  left: -64px;
 }
 
 .advantages__item--water::after {
   background-image: url("../../icons/icon-water.svg");
-  background-size: 26px 27px;
+  background-size: 27px 31px;
 }
 
 .advantages__item--food::after {
-  background-image: url("../../icons/icon-food.svg");
+  background-image: url("../../icons/icon-eat.svg");
   background-size: 25px 30px;
 }
 
 .advantages__item--watch::after {
   background-image: url("../../icons/icon-watch.svg");
   background-size: 26px 31px;
-  width: 26px;
-  height: 32px;
 }
 
 @media (min-width: $tablet-width) {

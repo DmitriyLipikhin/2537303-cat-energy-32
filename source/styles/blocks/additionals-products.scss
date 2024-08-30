@@ -1,16 +1,24 @@
+.additionals-products__container {
+  width: 280px;
+}
+
+.additionals-products__header-container {
+  padding: 25px 0 36px;
+}
+
 .additionals-products__title {
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
   color: $secondary-color;
+  margin: 0;
+  font-weight: 400;
 }
 
-
-.additionals-products__text {
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  text-align: center;
+.additionals-products__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .additionals-products__gift {

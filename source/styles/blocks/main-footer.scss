@@ -1,0 +1,23 @@
+.main-footer {
+  padding: 40px 0;
+  background-color: #f2f2f2;
+}
+
+.main-footer__container {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-footer__name-company {
+  margin-bottom: 15px;
+}
+
+.main-footer__name-company-link:hover svg {
+  opacity: 0.8;
+}
+
+.main-footer__name-company-link:active svg {
+  opacity: 0.6;
+}
