@@ -4,6 +4,10 @@
   padding: 20px 20px 25px;
 }
 
+.product-card:nth-child(2n) .product-card__image {
+  padding: 2px 28px;
+}
+
 .catalog-nutrition__list li {
   border-top: 1px #ebebeb solid;
 }
@@ -32,6 +36,7 @@
 
 .product-card__list {
   grid-column: 2/3;
+  margin: 0;
   margin-bottom: 21px;
 }
 
