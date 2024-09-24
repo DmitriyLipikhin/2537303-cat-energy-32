@@ -35,27 +35,71 @@
 
 @media (min-width: $tablet-width) {
   .hero {
-    padding: 0 30px;
+    background: none;
+  }
+
+  .hero__container {
+    width: 708px;
+    min-height: 867px;
+    position: relative;
+    padding: 65px 30px 20px 89px;
   }
 
   .hero__title {
     font-size: 60px;
     line-height: 60px;
+    color: #000000;
+    width: 416px;
+    text-align: start;
+    margin: 0;
+    margin-bottom: 32px;
   }
 
-  .hero-slogan {
+  .hero__slogan {
     font-size: 20px;
     line-height: 20px;
+    color: $secondary-color;
+    width: 283px;
+    margin-bottom: 50px;
+  }
+
+  .hero__image {
+    position: absolute;
+    z-index: -1;
+    top: 258px;
+    left: 0;
   }
 
   .hero__button {
     font-size: 20px;
     line-height: 26px;
+    width: 244px;
+    min-height: 54px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .hero {
-    padding: 0 110px;
+  .hero__container {
+    width: 1220px;
+    min-height: 575px;
+    padding: 105px 20px 20px 80px;
+  }
+
+  .hero__title {
+    margin-bottom: 41px;
+  }
+
+  .hero__slogan {
+    margin-bottom: 51px;
+  }
+
+  .hero__button {
+    width: 242px;
+  }
+
+  .hero__image {
+    z-index: 0;
+    top: 25px;
+    left: 447px;
   }
 }

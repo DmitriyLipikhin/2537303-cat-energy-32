@@ -18,12 +18,20 @@
   padding: 0;
   list-style-type: none;
   row-gap: 26px;
-  margin-bottom: 52px;
+  margin-bottom: 58px;
 }
 
 .advantages__item {
   position: relative;
   margin-left: 80px;
+}
+
+.advantages__text {
+  margin: 0;
+}
+
+.advantages__text br {
+  display: none;
 }
 
 .advantages__item::before {
@@ -67,12 +75,81 @@
 }
 
 @media (min-width: $tablet-width) {
+  .advantages {
+    padding: 45px 0 104px;
+  }
+
+  .advantages__container {
+    width: 708px;
+  }
+
   .advantages__title {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 72px;
+  }
+
+  .advantages__list {
+    margin: 0;
+    width: 630px;
+    grid-template-columns: 247px 257px;
+    gap: 119px 137px;
+    counter-reset: advantages-number 0;
   }
 
   .advantages__item {
+    margin: 0;
+    padding: 111px 15px 15px 0;
+    counter-increment: advantages-number 1;
+  }
+
+  .advantages__item--leaf {
+    width: 230px;
+  }
+
+  .advantages__item--water {
+    width: 246px;
+  }
+
+  .advantages__item--food {
+    width: 248px;
+  }
+
+  .advantages__item--watch {
+    width: 257px;
+  }
+
+  .advantages__item::after {
+    left: 27px;
+    top: 24px;
+  }
+
+  .advantages__item--leaf::after {
+    left: 25px;
+  }
+
+  .advantages__text br {
+    display: block;
+  }
+
+  .advantages__text::before {
+    content: counter(advantages-number);
+    display: block;
+    position: absolute;
+    top: -39px;
+    left: 113px;
+    z-index: -1;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 281px;
+    line-height: 281px;
+    color: #f2f2f2;
+  }
+
+  li:first-child .advantages__text::before {
+    left: 118px;
+  }
+
+  .advantages__text {
     font-size: 16px;
     line-height: 24px;
   }
@@ -80,6 +157,36 @@
   .advantages__item::before {
     width: 80px;
     height: 80px;
+    top: 0;
+    left: 0;
   }
 }
 
+@media (min-width: $desktop-width) {
+  .advantages {
+    padding-top: 73px;
+  }
+
+  .advantages__container {
+    width: 1220px;
+  }
+
+  .advantages__list {
+    grid-template-columns: 230px 246px 248px 250px;
+    width: 1231px;
+    gap: 0;
+    display: flex;
+  }
+
+  .advantages__item--leaf {
+    margin-right: 94px;
+  }
+
+  .advantages__item--water {
+    margin-right: 79px;
+  }
+
+  .advantages__item--food {
+    margin-right: 78px;
+  }
+}

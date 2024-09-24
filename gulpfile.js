@@ -15,6 +15,17 @@ import svgo from 'gulp-svgmin';
 import { stacksvg } from 'gulp-stacksvg';
 import server from 'browser-sync';
 import bemlinter from 'gulp-html-bemlinter';
+import gulp from 'gulp';
+import postcss from 'gulp-postcss';
+import autoprefixer from 'autoprefixer';
+
+export const css = () => {
+  return gulp.src('./src/*.css')
+    .pipe(postcss([
+      autoprefixer(),
+    ]))
+    .pipe(gulp.dest('./dest'))
+};
 
 const { src, dest, watch, series, parallel } = gulp;
 const sass = gulpSass(dartSass);

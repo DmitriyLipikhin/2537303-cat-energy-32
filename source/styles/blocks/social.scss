@@ -16,7 +16,7 @@
 }
 
 .social__list {
-  margin: 20px 0;
+  margin: 22px 0;
 }
 
 .social__link {
@@ -54,4 +54,16 @@
   mask-size: 27px 21px;
   width: 26px;
   height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    margin: 0;
+    border: none;
+    width: 132px;
+  }
+
+  .social__item {
+    margin: 0;
+  }
 }

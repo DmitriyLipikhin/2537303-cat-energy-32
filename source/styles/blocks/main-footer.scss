@@ -1,5 +1,5 @@
 .main-footer {
-  padding: 40px 0;
+  padding: 39px 0;
   background-color: #f2f2f2;
 }
 
@@ -20,4 +20,31 @@
 
 .main-footer__name-company-link:active svg {
   opacity: 0.6;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer {
+    padding-top: 43px;
+  }
+
+  .main-footer__container {
+    flex-direction: row;
+    width: 708px;
+    justify-content: space-between;
+  }
+
+  .main-footer__name-company {
+    margin: 0;
+    margin-right: 37px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer {
+    padding: 54px 0;
+  }
+
+  .main-footer__container {
+    width: 1220px;
+  }
 }

@@ -8,14 +8,6 @@
   padding: 2px 28px;
 }
 
-.catalog-nutrition__list li {
-  border-top: 1px #ebebeb solid;
-}
-
-.catalog-nutrition__list li:last-child {
-  border-bottom: 1px #ebebeb solid;
-}
-
 .product-card__title {
   font-family: $secondary-font;
   font-size: 16px;
@@ -26,6 +18,7 @@
   margin: 0;
   font-weight: 400;
   margin-bottom: 14px;
+  width: 76px;
 }
 
 .product-card__image {
@@ -53,14 +46,103 @@
 }
 
 @media (min-width: $tablet-width) {
-  .produc-card__title {
+  .product-card {
+    width: 324px;
+    padding: 0;
+    padding-bottom: 40px;
+    justify-items: center;
+    grid-template-columns: 324px;
+    background-image: linear-gradient(to bottom, #ffffff 15%, #f2f2f2 15%);
+    margin-bottom: 60px;
+  }
+
+  .product-card__image {
+    grid-row: 1/2;
+    padding: 29px 0 41px;
+  }
+
+  .product-card__image img {
+    display: block;
+  }
+
+  .product-card:nth-child(2n) .product-card__image {
+    padding: 12px 0 24px;
+  }
+
+  .product-card__title {
     font-size: 20px;
     line-height: 24px;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    text-align: center;
+    width: 135px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .product-card__list {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    width: 250px;
+    row-gap: 11px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 36px;
   }
 
   .product-card__item {
     font-size: 16px;
     line-height: 20px;
+    position: relative;
+  }
+
+  .product-card__item::after {
+    border-bottom: 1px solid #eaeaea;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    bottom: -8px;
+  }
+
+  .product-card__button {
+    grid-column: 1/2;
+    width: 250px;
+    min-height: 40px;
   }
 }
 
+@media (min-width: $desktop-width) {
+  .product-card {
+    width: 245px;
+    grid-template-columns: 245px;
+    padding-bottom: 43px;
+  }
+
+  .product-card__image {
+    padding-bottom: 29px;
+  }
+
+  .product-card:nth-child(2n) .product-card__image {
+    padding-bottom: 19px;
+    margin-top: 5px;
+  }
+
+  .product-card:nth-child(2n) img {
+    height: 196px;
+  }
+
+  .product-card__title {
+    margin-bottom: 26px;
+    margin-right: 1px;
+  }
+
+  .product-card__list {
+    width: 169px;
+    margin-bottom: 44px;
+  }
+
+  .product-card__button {
+    width: 169px;
+  }
+}

@@ -4,12 +4,20 @@
 
 @media (min-width: $tablet-width) {
   .main-header {
-    padding: 0 30px;
+    padding: 19px 30px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-header {
-    padding: 0 110px;
+    padding: 52px 110px 0;
+  }
+
+  .main-header--index {
+    background-image: linear-gradient(90deg, #ffffff 50%, #68b738d9 50%), image-set("../images/index-desktop-hero-bg@1x.webp" 1x type("image/webp"), "../images/index-desktop-hero-bg@2x.webp" 2x type("image/webp"), "../images/index-desktop-hero-bg@1x.jpg" 1x type("image/jpg"), "../images/index-desktop-hero-bg@2x.jpg" 2x type("image/jpg")), linear-gradient(90deg, #ffffff 50%, #454449 50%);
+    background-position: 100%, calc(50vw + 3px) 6px;
+    background-repeat: no-repeat;
+    background-size: auto, 1040px 694px;
+    margin-bottom: 82px;
   }
 }

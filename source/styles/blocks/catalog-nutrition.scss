@@ -1,4 +1,4 @@
-.catalog-nutritiom__header-container {
+.catalog-nutrition__header-container {
   width: 280px;
   padding-top: 27px;
   min-height: 104px;
@@ -21,12 +21,46 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card {
+  border-top: 1px #ebebeb solid;
 }
 
 @media (min-width: $tablet-width) {
+  .catalog-nutrition__header-container {
+    width: 708px;
+    padding: 57px 0 84px;
+  }
+
   .catalog-nutrition__title {
     font-size: 60px;
     line-height: 60px;
   }
+
+  .catalog-nutrition__container {
+    width: 708px;
+  }
+
+  .catalog-nutrition__list {
+    flex-flow: wrap;
+    justify-content: space-between;
+  }
+
+  .product-card {
+    border: none;
+  }
 }
 
+@media (min-width: $desktop-width) {
+  .catalog-nutrition__header-container {
+    width: 1220px;
+    padding-top: 69px;
+  }
+
+  .catalog-nutrition__container {
+    width: 1220px;
+  }
+}

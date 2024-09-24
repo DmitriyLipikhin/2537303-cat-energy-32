@@ -109,55 +109,123 @@
 }
 
 @media (min-width: $tablet-width) {
-  .programms__title {
-    font-size: 36px;
-    line-height: 36px;
+  .programms {
+    padding: 0;
   }
 
-  .programms__description {
-    font-size: 16px;
-    line-height: 24px;
+  .programms__container {
+    width: 708px;
   }
 
-  .programms__link {
-    font-size: 20px;
+  .programms__list {
+    row-gap: 30px;
   }
 
-  .programms__item::before {
-    content: "";
-    width: 200px;
-    height: 200px;
+  .programms__item {
+    padding: 77px 20px 53px 52px;
+    min-height: 372px;
   }
 
   .programms__item:nth-child(1)::after {
     width: 140px;
     height: 194px;
     background-size: 140px 194px;
+    left: auto;
+    right: 93px;
+    top: 81px;
   }
 
   .programms__item:nth-child(2)::after {
+    background-image: url("../../icons/cat-weight-gain-tablet.svg");
     width: 268px;
     height: 112px;
     background-size: 268px 112px;
+    left: auto;
+    right: 29px;
+    top: 135px;
+  }
+
+  .programms__item::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    left: auto;
+    right: 63px;
+    top: 92px;
+  }
+
+  .programms__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  .programms__description {
+    font-size: 16px;
+    line-height: 24px;
+    width: 340px;
+    margin-bottom: 58px;
+  }
+
+  .programms__description::after {
+    border: none;
+  }
+
+  .programms__link {
+    font-size: 20px;
+  }
+
+  .programms__link::after {
+    top: 10px;
+    right: -50px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .programms__container {
+    width: 1220px;
+  }
+
+  .programms__list {
+    grid-template-columns: 570px 570px;
+    column-gap: 80px;
+  }
+
   .programms__item::before {
     content: "";
     width: 100px;
     height: 100px;
+    top: 47px;
+    left: 52px;
+    right: 0;
   }
 
   .programms__item:nth-child(1)::after {
     width: 70px;
     height: 97px;
     background-size: 70px 97px;
+    top: 41px;
+    left: 67px;
+    right: auto;
   }
 
   .programms__item:nth-child(2)::after {
     width: 134px;
     height: 56px;
     background-size: 134px 56px;
+    top: 67px;
+    left: 33px;
+    right: auto;
+  }
+
+  .programms__title {
+    margin-left: 162px;
+    margin-bottom: 73px;
+  }
+
+  .programms__description {
+    width: 457px;
+    margin-bottom: 33px;
   }
 }
