@@ -103,3 +103,9 @@
     left: 447px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .hero {
+    padding: 0 110px;
+  }
+}

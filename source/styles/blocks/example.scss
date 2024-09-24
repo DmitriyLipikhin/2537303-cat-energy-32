@@ -256,6 +256,21 @@
     left: 0;
     height: 512px;
   }
+
+  .example__total {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__signature {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .example__cost {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 @media (min-width: $desktop-width) {
